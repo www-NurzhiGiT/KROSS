@@ -1,0 +1,51 @@
+@import "../../styles/mixin";
+.header {
+  height: 127.5px;
+  border-bottom: 1px solid rgb(234, 234, 234);
+  background-color: #fff;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  .header-bor {
+    width: 975px;
+    height: 41px;
+    @include flexbox(space-between, center);
+    position: relative;
+    top: 37px;
+    .link-header {
+      margin: 0;
+    }
+    .header-top {
+      @include flexbox(center, center);
+      gap: 16px;
+      margin: 0;
+      h1 {
+        color: rgb(0, 0, 0);
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 900;
+        line-height: 24px;
+      }
+      P {
+        color: rgb(157, 157, 157);
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        opacity: 70%;
+      }
+    }
+    //   ...v2
+    .header-bottom {
+      @include flexbox(center, center);
+      gap: 32px;
+      margin: 0;
+      .link-heart {
+        color: #000;
+      }
+      .header-bottom-item {
+        @include flexbox(space-between, center);
+        gap: 8px;
+      }
+    }
+  }
+}
