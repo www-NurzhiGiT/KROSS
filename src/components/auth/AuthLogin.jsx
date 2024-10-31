@@ -3,7 +3,6 @@ import "./Auth.scss";
 import { auth } from "../../firebase";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
-// import { createUserWithEmailAndPassword } from "firebase/auth";
 import { signInWithEmailAndPassword } from "firebase/auth";
 
 function AuthLogin() {
